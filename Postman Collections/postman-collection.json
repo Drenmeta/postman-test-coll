@@ -82,7 +82,6 @@
             "id": "118041ac-1ab8-4e37-8e74-68abc940e1e9",
             "exec": [
               "const response = pm.response.json();",
-              "console.log(response);",
               "",
               "pm.test(\"User has been Updated\", () => {",
               "    pm.expect(response.updatedAt).not.eql(null)",
@@ -185,7 +184,7 @@
     {
       "listen": "prerequest",
       "script": {
-        "id": "54bb2747-8f82-41fa-81ec-fe544141efa1",
+        "id": "5b16d9ab-eb84-4714-907e-941c72828909",
         "type": "text/javascript",
         "exec": [
           ""
@@ -195,7 +194,7 @@
     {
       "listen": "test",
       "script": {
-        "id": "be901def-f284-47b7-b668-e1813e3a8501",
+        "id": "1cdf957c-23d7-462b-baa0-a6cc4d8465d8",
         "type": "text/javascript",
         "exec": [
           ""
@@ -205,14 +204,8 @@
   ],
   "variable": [
     {
-      "id": "e6cd76ef-d8cf-42bc-82df-c38d02fe1f0c",
+      "id": "afcd80a6-6cfc-4dcc-85d3-dfd5269ddb43",
       "key": "url",
-      "value": "https://reqres.in",
-      "type": "string"
-    },
-    {
-      "id": "aaf41517-d9a6-4ed5-bea9-3d4b674205b5",
-      "key": "baseUrl",
       "value": "https://reqres.in",
       "type": "string"
     }
