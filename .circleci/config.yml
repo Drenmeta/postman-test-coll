@@ -15,5 +15,14 @@ jobs:
 
 workflows:
   new-workflow-1:
+    triggers:
+      - schedule:
+          cron: "0 0 * * *"
+          filters:
+            branches:
+              only:
+                - circleci-project-setup
     jobs:
       - newman-collection-run
+      
+
