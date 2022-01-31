@@ -40,9 +40,9 @@
         {
           "listen": "test",
           "script": {
+            "id": "4fafe90a-d46c-425d-ab59-565e604631a7",
             "exec": [
               "const response = pm.response.json();",
-              "console.log(response.data.first_name, response.data.id);",
               "",
               "pm.test(\"Person is Janet\", () => {",
               "    pm.expect(response.data.first_name).to.eql(\"Janet\"), pm.expect(response.data.id).eql(2);",
@@ -53,8 +53,7 @@
               "});",
               ""
             ],
-            "type": "text/javascript",
-            "id": "4fafe90a-d46c-425d-ab59-565e604631a7"
+            "type": "text/javascript"
           }
         }
       ],
@@ -204,7 +203,7 @@
   ],
   "variable": [
     {
-      "id": "afcd80a6-6cfc-4dcc-85d3-dfd5269ddb43",
+      "id": "d480264d-2bfb-4c65-b8e4-7fb4c8175beb",
       "key": "url",
       "value": "https://reqres.in",
       "type": "string"
