@@ -23,7 +23,7 @@
           }
         }
       ],
-      "_postman_id": "68d03a78-9d34-4db8-bb2e-c96992b70d51",
+      "id": "68d03a78-9d34-4db8-bb2e-c96992b70d51",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
       },
@@ -58,7 +58,7 @@
           }
         }
       ],
-      "_postman_id": "7e5dfe12-0453-4ce7-bc08-e45e72c33eb6",
+      "id": "7e5dfe12-0453-4ce7-bc08-e45e72c33eb6",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
       },
@@ -67,10 +67,7 @@
         "header": [],
         "body": {
           "mode": "raw",
-          "raw": "",
-          "options": {
-            "raw": {}
-          }
+          "raw": ""
         },
         "url": "{{url}}/api/users/2"
       },
@@ -82,6 +79,7 @@
         {
           "listen": "test",
           "script": {
+            "id": "118041ac-1ab8-4e37-8e74-68abc940e1e9",
             "exec": [
               "const response = pm.response.json();",
               "console.log(response);",
@@ -95,12 +93,11 @@
               "});",
               ""
             ],
-            "type": "text/javascript",
-            "id": "118041ac-1ab8-4e37-8e74-68abc940e1e9"
+            "type": "text/javascript"
           }
         }
       ],
-      "_postman_id": "773ca723-b20f-40a0-907e-0b30823e4e26",
+      "id": "773ca723-b20f-40a0-907e-0b30823e4e26",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
       },
@@ -109,7 +106,7 @@
         "header": [],
         "body": {
           "mode": "raw",
-          "raw": "{\n    \"name\" : \"dren\",\n    \"job\" : \"QA\"\n}",
+          "raw": "{\n    \"name\" : \"UpdatedUser\",\n    \"job\" : \"Gardener\"\n}",
           "options": {
             "raw": {
               "language": "json"
@@ -142,7 +139,7 @@
           }
         }
       ],
-      "_postman_id": "88ce2eaf-c79a-42ad-a18c-ec40b1dc4657",
+      "id": "88ce2eaf-c79a-42ad-a18c-ec40b1dc4657",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
       },
@@ -188,7 +185,7 @@
     {
       "listen": "prerequest",
       "script": {
-        "id": "54bb2747-8f82-41fa-81ec-fe544141efa1",
+        "id": "5b16d9ab-eb84-4714-907e-941c72828909",
         "type": "text/javascript",
         "exec": [
           ""
@@ -198,7 +195,7 @@
     {
       "listen": "test",
       "script": {
-        "id": "be901def-f284-47b7-b668-e1813e3a8501",
+        "id": "1cdf957c-23d7-462b-baa0-a6cc4d8465d8",
         "type": "text/javascript",
         "exec": [
           ""
@@ -208,14 +205,8 @@
   ],
   "variable": [
     {
-      "id": "1b418fca-f78a-45ed-92bb-4cd1c4ece56e",
+      "id": "e8a7af7d-40bb-4de9-9d3b-e61117cdaf7e",
       "key": "url",
-      "value": "https://reqres.in",
-      "type": "string"
-    },
-    {
-      "id": "c31a1736-72bc-46ff-9847-2696ea2c67d6",
-      "key": "baseUrl",
       "value": "https://reqres.in",
       "type": "string"
     }
