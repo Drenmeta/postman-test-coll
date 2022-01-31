@@ -124,28 +124,7 @@
             }
           }
         },
-        "url": {
-          "raw": "{{url}}/api/users",
-          "host": [
-            "{{url}}"
-          ],
-          "path": [
-            "api",
-            "users"
-          ],
-          "query": [
-            {
-              "key": "name",
-              "value": "john",
-              "disabled": true
-            },
-            {
-              "key": "job",
-              "value": "accountant",
-              "disabled": true
-            }
-          ]
-        }
+        "url": "{{url}}/api/users"
       },
       "response": []
     },
@@ -203,7 +182,7 @@
   ],
   "variable": [
     {
-      "id": "1ffeaa1f-d251-4d36-8b6a-4b688a635ba0",
+      "id": "588467f4-f635-4966-bd9d-40085c8cbbc6",
       "key": "url",
       "value": "https://reqres.in",
       "type": "string"
