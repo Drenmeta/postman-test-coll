@@ -10,7 +10,7 @@ jobs:
       - checkout
 
       - newman/newman-run:
-          collection: https://api.getpostman.com/collections/19296706-7117c964-f311-41cb-a8bf-f1422f9e5f18?apikey=PMAK-61f82d723bf9032780aebbf9-9852a0591355be8b0b9f97f591c7a3ac21
+          collection: https://github.com/Drenmeta/postman-test-coll/blob/3460c3652757e0ec399d478383ef1b9d4fca42e9/Postman%20Collections/postman-collection.json
           # environment: https://api.getpostman.com/environments/19296706-e55119ff-11a2-4424-a134-074d17e91254?apikey=PMAK-61f82d723bf9032780aebbf9-9852a0591355be8b0b9f97f591c7a3ac21
 
 workflows:
