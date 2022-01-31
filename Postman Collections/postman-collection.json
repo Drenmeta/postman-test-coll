@@ -1,0 +1,191 @@
+{
+  "info": {
+    "_postman_id": "7117c964-f311-41cb-a8bf-f1422f9e5f18",
+    "name": "Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "get user",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "4fafe90a-d46c-425d-ab59-565e604631a7",
+            "exec": [
+              "const response = pm.response.json();",
+              "",
+              "pm.test(\"Person is Janet\", () => {",
+              "    pm.expect(response.data.first_name).to.eql(\"Janet\"), pm.expect(response.data.id).eql(2);",
+              "});",
+              "",
+              "pm.test(\"Status code is 200\", function () {",
+              "  pm.response.to.have.status(200);",
+              "});",
+              ""
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "id": "7e5dfe12-0453-4ce7-bc08-e45e72c33eb6",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": "{{url}}/api/users/2"
+      },
+      "response": []
+    },
+    {
+      "name": "put user",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "118041ac-1ab8-4e37-8e74-68abc940e1e9",
+            "exec": [
+              "const response = pm.response.json();",
+              "",
+              "pm.test(\"User has been Updated\", () => {",
+              "    pm.expect(response.updatedAt).not.eql(null)",
+              "});",
+              "",
+              "pm.test(\"Status code is 200\", function () {",
+              "  pm.response.to.have.status(200);",
+              "});",
+              ""
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "id": "773ca723-b20f-40a0-907e-0b30823e4e26",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\" : \"UpdatedUser\",\n    \"job\" : \"Gardener\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{url}}/api/users/2"
+      },
+      "response": []
+    },
+    {
+      "name": "post user",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "fb5c70f4-1150-44af-8939-844db4564842",
+            "exec": [
+              "const response = pm.response.json();",
+              "",
+              "pm.test(\"User has been created\", () => {",
+              "    pm.expect(response.id).not.eql(null);",
+              "})",
+              "pm.test(\"Status code is 201\", function () {",
+              "  pm.response.to.have.status(201);",
+              "});",
+              ""
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "id": "88ce2eaf-c79a-42ad-a18c-ec40b1dc4657",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"john1\",\n    \"job\": \"accountant\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{url}}/api/users"
+      },
+      "response": []
+    },
+    {
+      "name": "delete user",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "03581603-19f9-4634-bd24-b2a2aa568453",
+            "exec": [
+              "",
+              "pm.test(\"User is deleted\", function () {",
+              "  pm.response.to.have.status(204);",
+              "});",
+              ""
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "id": "68d03a78-9d34-4db8-bb2e-c96992b70d51",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": "{{url}}/api/users/2"
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "5b16d9ab-eb84-4714-907e-941c72828909",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "1cdf957c-23d7-462b-baa0-a6cc4d8465d8",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "id": "588467f4-f635-4966-bd9d-40085c8cbbc6",
+      "key": "url",
+      "value": "https://reqres.in",
+      "type": "string"
+    }
+  ]
+}
