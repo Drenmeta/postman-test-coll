@@ -11,6 +11,7 @@
         {
           "listen": "test",
           "script": {
+            "id": "03581603-19f9-4634-bd24-b2a2aa568453",
             "exec": [
               "",
               "pm.test(\"User is deleted\", function () {",
@@ -18,8 +19,7 @@
               "});",
               ""
             ],
-            "type": "text/javascript",
-            "id": "03581603-19f9-4634-bd24-b2a2aa568453"
+            "type": "text/javascript"
           }
         }
       ],
@@ -203,7 +203,7 @@
   ],
   "variable": [
     {
-      "id": "d480264d-2bfb-4c65-b8e4-7fb4c8175beb",
+      "id": "a394bd37-389a-4bc7-bf1d-a603e9674719",
       "key": "url",
       "value": "https://reqres.in",
       "type": "string"
