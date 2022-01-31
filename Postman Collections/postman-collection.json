@@ -1,0 +1,44 @@
+{
+  "info": {
+    "_postman_id": "782839f4-5503-4353-9610-a871aa6f8350",
+    "name": "Collection Copy",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Postman",
+      "item": [],
+      "_postman_id": "87178fe0-f216-42cf-bc5f-7de21a874a4e"
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ],
+        "id": "9b0775af-98d5-4977-8947-6e4cf4be5bed"
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ],
+        "id": "09c4f193-ba24-46f9-ba53-8a8725daa246"
+      }
+    }
+  ],
+  "variable": [
+    {
+      "id": "dde5ddfc-51f1-441e-8c2d-5ab1009cd611",
+      "key": "url",
+      "value": "https://reqres.in",
+      "type": "string"
+    }
+  ]
+}
